@@ -265,14 +265,15 @@
                 <div class="modal-body">
                     <div id="inicioSesion">
                         <div id="intoInicio">
-                            <form class="form-group" action="" method="post">
+                            <form class="form-group" action="" >
+                                
                                 <input type="email" name="correo" size="auto"
-                                    placeholder="Correo electrónico o número" />
+                                    placeholder="Correo electrónico o número" id="iniciarSesion1" />
                                 <br>
 
-                                <br> <input type="password" name="contrasena" placeholder="Contraseña" /> <br>
+                                <br> <input type="password" name="contrasena" placeholder="Contraseña" id="contrasena1" /> <br>
 
-                                <br><button type="button" class="btn btn-outline-primary"> Iniciar sesión </button><br>
+                                <br><button type="submit" onclick="cookieSesion()" class="btn btn-outline-primary"> Iniciar sesión </button><br>
 
                                 <br> <a href="olvcontra.html"> ¿Olvidaste tu contraseña? </a> <br>
 

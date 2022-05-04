@@ -15,6 +15,8 @@
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="javaScript/Scripts.js"></script>
+
 
 </head>
 
@@ -129,9 +131,9 @@
     <br><h1 id="tituloFormularios">REGISTRAR MOTO</h1>
     <p class="alinear"></p>
 
-    <form action="" method="post">
+    <form action="" onsubmit="fechacorrect()" >
 
-        <div class="datos">
+        <div class="datosDiv">
 
             <legend> Ingresa los siguientes datos </legend>
             <label for="Cedula">Cedula </label>
@@ -158,12 +160,14 @@
 
             <label for="fotoImag"> Suba imagen de la moto </label>
             <input type="file" name="fotoImag" size="10" /><br>
-        </div>
-    </form>
 
-    <div class="datos1">
-        <br> <input type="submit" value="Registrar moto" /><br>
-    </div><br>
+        </div>
+        <div class="datos1">
+            <br> <input type="submit" value="Registrar moto"/><br>
+        </div><br>
+    </form>
+                                                              
+   
 
     <div id="footer2">
         <div id="columna1">
@@ -272,7 +276,17 @@
             </div>
         </div>
     </div>
+    <script>
+        function fechacorrect(){
+            //var v1 = parseInt (document.getElementById('f1').value);
+            var v1 = parseInt(prompt ("ingrese un valor", "primer valor"));
+            var v2 = parseInt(prompt ("ingrese un valor", "segundo valor")); 
+            alert (v1 + v2);
 
+        }
+
+    </script>
+    
 </body>
 
 </html>

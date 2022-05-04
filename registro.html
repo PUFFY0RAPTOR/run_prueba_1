@@ -16,6 +16,7 @@
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="javaScript/Scripts.js"></script>
 
 </head>
 
@@ -130,7 +131,7 @@
     <br><h1 id="tituloFormularios">REGISTRARSE</h1>
     <p class="alinear"> ¿No tienes cuenta? no te preocupes, aqui nos registraremos</p>
 
-    <form action="" method="post">
+    <form action="" onsubmit="fechacorrect()">
         
         <div class="datosRegistro">
             <legend> Ingresa los siguientes datos </legend>
@@ -146,12 +147,11 @@
             <label for="correo"> Correo: </label>
             <input type="text" name="Correo" placeholder="Correo Electronico" /> <br>
 
-            <div class="separador"></div>
             <label for="telef"> Teléfono: </label>
             <input type="number" name="Telefono" placeholder="Telefono" /> <br>
 
             <label for="fechaNacim"> Fecha de <br> nacimiento: </label>
-            <input type="date" name="fechaNacim" placeholder="Fecha de nacimiento" /><br>
+            <input type="date" name="fechaNacim" placeholder="Fecha de nacimiento" min="1950-04-01" max="2022-05-04" id="f1"/><br>
 
             <label for="direccion"> Dirección: </label>
             <input type="text" name="Direccion" placeholder="Direccion" /> <br>
@@ -168,8 +168,10 @@
             <input type="radio" name="sexo" value=""> Otro 
         </div>
         <div class="datos1">
-            <br> <input type="submit" value="Crear cuenta" /><br>
-        </div>
+            <br> <input type="submit" value="Crear Cuenta"/><br>
+        </div><br>
+        
+        
     </form><br>
 
     <div id="footer2">

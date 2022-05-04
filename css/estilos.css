@@ -49,7 +49,8 @@
     width: 33%;
     border: solid black 1px;
     padding: 20px;
-}
+    margin-bottom: 8%;
+} 
 
 #bar1{
     background-color: #cccccc;
@@ -80,7 +81,15 @@ h1, .alinear, .datos, #crearBoton, .datos1{
 .datos{
     margin: auto;
     text-align: center;
-    width: 33%;
+    /*width: 33%;*/
+    border: solid black 1px;
+    padding: 20px;
+}
+
+.datosDiv{
+    margin: auto;
+    text-align: center;
+    width: 31%;
     border: solid black 1px;
     padding: 20px;
 }
@@ -138,13 +147,13 @@ h1, .alinear, .datos, #crearBoton, .datos1{
     color: #ffffff;
     font-size: xx-large;
     position: absolute;
-    top: 85%;
+    top: 65%;
     left: 68%;
 }
 
 #membresia{
     position: absolute;
-    top: 102%;
+    top: 76%;
     right: 17%;
 }
 
@@ -222,3 +231,6 @@ h1, .alinear, .datos, #crearBoton, .datos1{
     z-index: 2;
 }
 
+select{
+    margin-left: 5%;
+}

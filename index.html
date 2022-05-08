@@ -15,10 +15,11 @@
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
-
+    <script src="javaScript/Scripts.js"></script>
+    
 </head>
 
-<body id="index">
+<body id="index" onload="interface()">
     <div id="posicionNav">
         <!--fixed-top deja la barra de navegacion arriba independientemente del  scrool-->
         <div id="banner">
@@ -270,22 +271,25 @@
                 </div>
 
                 <!-- Modal body -->
-                <div class="modal-body">
+                <div class="modal-body" >
                     <div id="inicioSesion">
                         <div id="intoInicio">
-                            <form class="form-group" action="" >
-                                
-                                <input type="email" name="correo" size="auto"
-                                    placeholder="Correo electrónico o número" id="iniciarSesion1" />
+                            <form class="form-group" action="">
+
+                                <input type="email" name="correo" size="auto" placeholder="Correo electrónico o número"
+                                    id="iniciarSesion1" />
                                 <br>
 
-                                <br> <input type="password" name="contrasena" placeholder="Contraseña" id="contrasena1" /> <br>
+                                <br> <input type="password" name="contrasena" placeholder="Contraseña"
+                                    id="contrasena1" /> <br>
 
                                 <br><button type="submit" onclick="cookieSesion()" class="btn btn-outline-primary"> Iniciar sesión </button><br>
 
                                 <br> <a href="olvcontra.html"> ¿Olvidaste tu contraseña? </a> <br>
 
                                 <br> <a href="registro.html"> Registrarse </a>
+
+                                <br> <button > prueba</button>
 
                             </form>
                         </div>

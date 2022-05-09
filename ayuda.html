@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body onload="interface()">
     <div id="posicionNav">
         <!--fixed-top deja la barra de navegacion arriba independientemente del  scrool-->
         <div id="banner">
@@ -137,7 +137,7 @@
             <div class="datosRegistro">
                 
                 <label for="nombre"> Nombre <br>completo: </label>
-                <input type="text" name="nombre" placeholder="Nombre completo" style="width: 200px;"/><br>
+                <input type="text" name="nombre" placeholder="Nombre completo"/><br>
 
                 <label for="edad"> Edad: </label>
                 <input type="number" name="edad" placeholder="Edad"/><br>
@@ -145,10 +145,11 @@
                 <label for="correo"> Correo <br>electrónico: </label>
                 <input type="email" name="correo" placeholder="Correo electrónico" /> <br>
                 
-                <br><label for="desc"> Cuentános tu problema: </label>
-                <br><textarea name="textarea" id="desc" rows="6" cols="36" placeholder="Escriba aquí..." ></textarea><br>
+                <label for="desc"> Cuentános tu problema: </label>
+                <textarea name="textarea" id="desc" rows="6" cols="36" placeholder="Escriba aquí..." ></textarea><br>
 
             </div>
+            
             <div class="datos1">
                 <br> <input type="submit" value="Enviar"/><br>
             </div>

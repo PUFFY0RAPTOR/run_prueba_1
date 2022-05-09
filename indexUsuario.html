@@ -132,6 +132,7 @@
             </ul>
         </nav>
     </div>
+    
     <!--perfil-->
     <div class="modal fade" id="perfil" role="dialog">
         <!-- The Modal -->
@@ -140,7 +141,7 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Información del Producto</h4>
+                    <h4 class="modal-title">Información del Perfil</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -148,38 +149,26 @@
                 <div class="modal-body">
                     <form action="" method="post">
                         <div>
-                            <img src="imagenes/bujia.jpg" alt="Bujía" width="100%" height="220px">
+                            <img src="imagenes/teoPerfil.jpg" alt="Bujía" width="50%" height="220px" id="imagenPerfil">
                         </div>
 
-                        <div class="datos">
+                        <div class="datosPerfil">
 
-                            <label for="codigo">Codigo: </label>
-                            <input type="text" name="codigo" size="auto" value="10018745" readonly /><br>
+                            <label for="codigo">Nombre: </label>
+                            <input type="text" name="codigo" size="auto" value="Mateo Ortiz Lopez" /><br>
 
-                            <label for="nombreRes">Nombre <br>repuesto: </label>
-                            <input type="text" name="nombreRes" value="Carburador" readonly /> <br>
+                            <label for="nombreRes"> Correo <br> eléctronico:  </label>
+                            <input type="email" name="nombreRes" value="mateoortiz54@hotmail.com" /> <br>
 
-                            <label for="stock">Stock: </label>
-                            <input type="number" name="stock" value="50" readonly /> <br>
+                            <label for="stock">Fecha de <br>nacimiento:  </label>
+                            <input type="date" name="stock" value="20/02/2001"/><br>
 
-                            <label for="costo">Costo: </label>
-                            <input type="number" name="costo" value="250000" readonly /> <br>
-
-                            <label for="precio">Precio: </label>
-                            <input type="number" name="precio" value="300000" readonly /> <br><br>
+                            <label for="descPerfil">Descripción: </label><br>
+                            <textarea name="descripcion" id="descPerfil" cols="30" rows="6" placeholder="Soy la más mágicaaaaaaa!!!"></textarea>
 
                         </div>
-
-
-
                     </form>
                 </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal"> Cerrar </button>
-                </div>
-
             </div>
         </div>
     </div>

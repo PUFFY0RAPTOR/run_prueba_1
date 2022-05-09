@@ -16,7 +16,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
     <script src="javaScript/Scripts.js"></script>
-    
+
 </head>
 
 <body id="index" onload="interface()">
@@ -128,27 +128,32 @@
 
     <br>
     <div id="fondoContenedor">
-        <img src="imagenes/fondo2.jpg" alt="imagen de moto" width="89%" height="700">
         <div class="textoEncima">
-            <p> Atrévete a lo intrépido <br> con nuestros planes </p>
+            <h1> Atrévete a lo intrépido <br> con nuestrosplanes </h1>
+            <button class="btn btn-outline-light" data-toggle="modal" data-target="#iniciarSesion" id="membresia"> Membresía </button>
         </div>
-        <button class="btn btn-outline-light" data-toggle="modal" data-target="#iniciarSesion" id="membresia"> Membresía
-        </button>
+        <img src="imagenes/fondo2.jpg" alt="imagen de moto" width="89%" height="700">
+    </div>
+
+    <div id="imagenesFondo2">
+        <div id="imgIzqDiv">
+            <div class="textoEncimaIzq">
+                <h2>Descuentos en el <br> cambio de tus llantas</h2>
+                <button class="btn btn-outline-light" data-toggle="modal" data-target="#iniciarSesion"> Consiguelo ahora </button>
+            </div>
+            <img src="imagenes/llantasMotos.jpg" alt="Llantas motos" id="imgIzq1" width="49%" height="400px">
+        </div>
+
+        <div id="imgDerDiv">
+            <div class="textoEncimaDer">
+                <h2>Descuentos en el <br> cambio de tu aceite</h2>
+                <button class="btn btn-outline-light" data-toggle="modal" data-target="#iniciarSesion"> Adquiere ahora </button>
+            </div>
+            <img src="imagenes/aceiteMoto.jpg" alt="Aceite" id="imgDer1" width="49%" height="400px">
+        </div>
     </div>
 
     <br>
-
-    <!--<div id="contenedorImagenes">
-        <img class="izquierdin" src="aceiteMoto.jpg" alt="Cambio de aceite moto" width="48%" >
-        <div class="textoEncimaIzq"><p> Por esta semana 30%<br> de descuento </p></div>
-        <a href="inicioSesion.html"><button class="btn btn-light" id="compraAhora"> Compra ahora </button></a>
-
-        <img class="derechin" src="llantasMotos.jpg" alt="Cambio de aceite moto" width="48%">
-        <div class="textoEncimaDer"><p> ¿Cambiaste tus llantas?<br> Hazlo ahora </p></div>
-        <a href="inicioSesion.html"><button class="btn btn-outline-light" id="pideloAhora"> Pidelo ahora </button></a>
-        
-    </div>-->
-
     <a href="ayuda.html">
         <button id="flotante"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                 class="bi bi-headset" viewBox="0 0 16 16">
@@ -271,7 +276,7 @@
                 </div>
 
                 <!-- Modal body -->
-                <div class="modal-body" >
+                <div class="modal-body">
                     <div id="inicioSesion">
                         <div id="intoInicio">
                             <form class="form-group" action="">
@@ -283,13 +288,12 @@
                                 <br> <input type="password" name="contrasena" placeholder="Contraseña"
                                     id="contrasena1" /> <br>
 
-                                <br><button type="submit" onclick="cookieSesion()" class="btn btn-outline-primary"> Iniciar sesión </button><br>
+                                <br><button type="submit" onclick="cookieSesion()" class="btn btn-outline-primary">
+                                    Iniciar sesión </button><br>
 
                                 <br> <a href="olvcontra.html"> ¿Olvidaste tu contraseña? </a> <br>
 
                                 <br> <a href="registro.html"> Registrarse </a>
-
-                                <br> <button > prueba</button>
 
                             </form>
                         </div>

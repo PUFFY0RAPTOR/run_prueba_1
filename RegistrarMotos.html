@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body onload="interface()">
     <div id="posicionNav">
         <!--fixed-top deja la barra de navegacion arriba independientemente del  scrool-->
         <div id="banner">
@@ -143,33 +143,35 @@
 
         <div class="datosDiv">
 
-            <legend> Ingresa los siguientes datos </legend>
-            <label for="Cedula">Cedula </label>
-            <input type="text" name="Nombre" size="10" placeholder="Juan" /><br>
+            <h4> Ingresa los siguientes datos </h4>
+            
+            <label for="Cedula">Cédula: </label>
+            <input type="text" name="Nombre" size="20" placeholder="1001547896" /><br>
 
-            <label for="modelo">Modelo </label>
-            <input type="number" name="modelo" size="10" placeholder="2014" /><br>
+            <label for="modelo">Modelo: </label>
+            <input type="number" name="modelo" size="20" placeholder="2014" /><br>
 
-            <label for="marca">Marca </label>
-            <input type="text" name="marca" size="10" placeholder="YAMAHA" /><br>
+            <label for="marca">Marca: </label>
+            <input type="text" name="marca" size="20" placeholder="YAMAHA" /><br>
 
-            <label for="Cilindraje">Cilindraje </label>
-            <input type="text" name="Cilindraje" size="10" placeholder="180" /><br>
+            <label for="Cilindraje">Cilindraje: </label>
+            <input type="text" name="Cilindraje" size="20" placeholder="180" /><br>
 
 
-            <label for="Potencia"> Potencia (en cv) </label>
-            <input type="number" name="Potencia" size="10" placeholder="80" /><br>
+            <label for="Potencia"> Potencia (en cv): </label>
+            <input type="number" name="Potencia" size="20" placeholder="80" /><br>
 
-            <label for="fechaNacim"> Tipo de carné </label>
-            <input type="text" name="carné" size="10" placeholder="tipo c" /><br>
+            <label for="fechaNacim"> Tipo de carné: </label>
+            <input type="text" name="carné" size="20" placeholder="tipo c" /><br>
 
-            <label for="fechaNacim">Año de compra </label>
-            <input type="number" name="año" size="10" placeholder="2016" /><br><br>
+            <label for="fechaNacim">Año de compra: </label>
+            <input type="number" name="año" size="20" placeholder="2016" /><br><br>
 
-            <label for="fotoImag"> Suba imagen de la moto </label>
-            <input type="file" name="fotoImag" size="10" /><br>
+            <label for="fotoImag"> Imagen de la moto </label>
+            <input type="file" name="fotoImag" size="20" /><br>
 
         </div>
+
         <div class="datos1">
             <br> <input type="submit" value="Registrar moto"/><br>
         </div><br>

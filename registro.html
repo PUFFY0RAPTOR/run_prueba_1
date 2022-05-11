@@ -21,7 +21,7 @@
 </head>
 
 
-<body>
+<body onload="interface()">
     <div id="posicionNav">
         <!--fixed-top deja la barra de navegacion arriba independientemente del  scrool-->
         <div id="banner">
@@ -66,6 +66,14 @@
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="listarRepuestos.html">Listar repuestos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown" href="#">
+                            Compras
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="compras.html">Ver productos</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -123,92 +131,132 @@
     <!-------------------------------------------------------------------------------------CODIGO NUEVO----------------------------------------------------------------------------------------->
 
     <a href="ayuda.html">
-        <button id="flotante"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
-            <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
-        </svg></button>
-    </a>  
+        <button id="flotante"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                class="bi bi-headset" viewBox="0 0 16 16">
+                <path
+                    d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z" />
+            </svg></button>
+    </a>
 
-    <br><h1 id="tituloFormularios">REGISTRARSE</h1>
+    <br>
+    <h1 id="tituloFormularios">REGISTRARSE</h1>
     <p class="alinear"> ¿No tienes cuenta? no te preocupes, aqui nos registraremos</p>
 
     <form action="" onsubmit="fechacorrect()">
-        
+
         <div class="datosRegistro">
-            <legend> Ingresa los siguientes datos </legend>
-            <label class="Cedula" for="Cedula">Cedula </label>
-            <input  class="inputregis" type="text" name="Cedula" size="10" placeholder="Cédula" /><br>
+            <h4>Ingresa los siguientes datos</h4><br>
 
-            <label for="nombre">Nombre</label>
-            <input  class="inputregis" type="text" name="nombre" size="10" placeholder="Nombre" /><br>
+            <label class="Cedula" for="Cedula">Cédula: </label>
+            <input class="inputregis" type="text" name="Cedula" size="20" placeholder="Cédula" />
 
-            <label for="Apellidos">Apellidos</label>
-            <input  class="inputregis" type="text" name="Apellidos" size="10" placeholder="Apellidos" /><br>
+            <label for="nombre">Nombre: </label>
+            <input class="inputregis" type="text" name="nombre" size="20" placeholder="Nombre" />
+
+            <label for="Apellidos">Apellidos: </label>
+            <input class="inputregis" type="text" name="Apellidos" ssize="20" placeholder="Apellidos" />
 
             <label for="correo"> Correo: </label>
-            <input type="text" name="Correo" placeholder="Correo Electronico" /> <br>
+            <input type="text" name="Correo" placeholder="Correo Electronico" />
 
             <label for="telef"> Teléfono: </label>
-            <input type="number" name="Telefono" placeholder="Telefono" /> <br>
+            <input type="number" name="Telefono" placeholder="Telefono" />
 
             <label for="fechaNacim"> Fecha de <br> nacimiento: </label>
-            <input type="date" name="fechaNacim" placeholder="Fecha de nacimiento" min="1950-04-01" max="2022-05-04" id="f1"/><br>
+            <input type="date" name="fechaNacim" placeholder="Fecha de nacimiento" min="1950-04-01" max="2022-05-04"
+                id="f1" />
 
             <label for="direccion"> Dirección: </label>
-            <input type="text" name="Direccion" placeholder="Direccion" /> <br>
+            <input type="text" name="Direccion" placeholder="Direccion" />
 
             <label for="contrasena"> Contraseña: </label>
-            <input type="password" name="contrasena" placeholder="Contraseña" /> <br>
+            <input type="password" name="contrasena" placeholder="Contraseña" />
 
-            <label for="contrasenaconfirm"> Confirmar <br>contraseña: </label>
-            <input type="password" name="contrasenaconfirm" placeholder="Digite contraseña nuevamente" /> <br>
+            <label for="contrasenaconfirm"> Confirmar contraseña: </label>
+            <input type="password" name="contrasenaconfirm" placeholder="Digite contraseña nuevamente" /><br>
 
-            ¿Cuál es su género? <br>
-            <input type="radio" name="sexo" value=""> Hombre 
-            <input type="radio" name="sexo" value=""> Mujer 
-            <input type="radio" name="sexo" value=""> Otro 
+            ¿Cuál es su género?
+            <input type="radio" name="sexo" value=""> Hombre
+            <input type="radio" name="sexo" value=""> Mujer
+            <input type="radio" name="sexo" value=""> Otro
         </div>
+
         <div class="datos1">
-            <br> <input type="submit" value="Crear Cuenta"/><br>
+            <br> <input type="submit" value="Crear Cuenta" /><br>
         </div><br>
-        
-        
+
+
     </form><br>
 
     <div id="footer2">
         <div id="columna1">
-            <a href="#"><h5>¿Quienes somos?</h5></a>
+            <a href="#">
+                <h5>¿Quienes somos?</h5>
+            </a>
             <p> Somos la mejor página de venta y distribución de repuestos para motos en Colombia, contamos con buenos
                 productos y buen personal.</p>
         </div>
 
         <div id="columna2">
             <ul>
-                <a href="#"><h5>Marcas</h5></a>
-                <a href="#"><li> YAMAHA</li></a>
-                <a href="#"><li> TVS </li></a>
-                <a href="#"><li> AKT </li></a>
-                <a href="#"><li> KYMCO </li></a>
-                <a href="#"><li> HONDA </li></a>
+                <a href="#">
+                    <h5>Marcas</h5>
+                </a>
+                <a href="#">
+                    <li> YAMAHA</li>
+                </a>
+                <a href="#">
+                    <li> TVS </li>
+                </a>
+                <a href="#">
+                    <li> AKT </li>
+                </a>
+                <a href="#">
+                    <li> KYMCO </li>
+                </a>
+                <a href="#">
+                    <li> HONDA </li>
+                </a>
             </ul>
         </div>
 
         <div id="columna3">
             <ul>
-                <a href="#"><h5>Categorias</h5></a>
-                <a href="#"><li> Accesorios</li></a>
-                <a href="#"><li> Herramientas </li></a>
-                <a href="#"><li> Iluminación </li></a>
-                <a href="#"><li> Lubricantes </li></a>
-                <a href="#"><li> Descuentos </li></a>
+                <a href="#">
+                    <h5>Categorias</h5>
+                </a>
+                <a href="#">
+                    <li> Accesorios</li>
+                </a>
+                <a href="#">
+                    <li> Herramientas </li>
+                </a>
+                <a href="#">
+                    <li> Iluminación </li>
+                </a>
+                <a href="#">
+                    <li> Lubricantes </li>
+                </a>
+                <a href="#">
+                    <li> Descuentos </li>
+                </a>
             </ul>
         </div>
 
         <div id="columna4">
             <ul>
-                <a href="#"><h5>Políticas</h5></a>
-                <a href="#"><li> Compras y devoluciones</li></a>
-                <a href="#"><li> Términos y condiciones </li></a>
-                <a href="#"><li> Métodos de pago </li></a>
+                <a href="#">
+                    <h5>Políticas</h5>
+                </a>
+                <a href="#">
+                    <li> Compras y devoluciones</li>
+                </a>
+                <a href="#">
+                    <li> Términos y condiciones </li>
+                </a>
+                <a href="#">
+                    <li> Métodos de pago </li>
+                </a>
             </ul>
         </div>
 
@@ -242,7 +290,8 @@
         <p> © 2022 by students of ADSI Copyright: SENA </p>
     </div>
 
-    <div class="modal fade" id="iniciarSesion"> <!--Inicio de sesión-->
+    <div class="modal fade" id="iniciarSesion">
+        <!--Inicio de sesión-->
         <div class="modal-dialog">
             <div class="modal-content">
 
@@ -255,19 +304,20 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div id="inicioSesion">
-                        <div id="intoInicio">                
+                        <div id="intoInicio">
                             <form class="form-group" action="" method="post">
-                                <input type="email" name="correo" size="auto" placeholder="Correo electrónico o número" />
+                                <input type="email" name="correo" size="auto"
+                                    placeholder="Correo electrónico o número" />
                                 <br>
-                
+
                                 <br> <input type="password" name="contrasena" placeholder="Contraseña" /> <br>
-                
+
                                 <br><button type="button" class="btn btn-outline-primary"> Iniciar sesión </button><br>
-                
+
                                 <br> <a href="olvcontra.html"> ¿Olvidaste tu contraseña? </a> <br>
-                
+
                                 <br> <a href="registro.html"> Registrarse </a>
-                
+
                             </form>
                         </div>
                     </div>

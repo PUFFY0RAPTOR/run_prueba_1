@@ -16,7 +16,7 @@ function cookieSesion() {
         if (v1 == "mateo.220@hotmail.com" && v2 == "1234"){
             sessionStorage.setItem("nameSession", v1);//aqui en vez de definir las variables v1 y v2 puedo poner los  codigos directamente
             sessionStorage.setItem("passSession", v2);
-            window.open('indexUsuario.html', "_self");
+            window.open('usuarios/indexUsuario.html', "_self");
         }
     }  
 }
@@ -25,8 +25,9 @@ function interface(){
 
     primera = sessionStorage.getItem("nameSession");
     if (primera != "null"){
-        alert("inicio de sesion exitoso")
-        window.open('indexUsuario.html', "_self");
+        //alert("inicio de sesion exitoso")
+        window.open('usuarios/indexUsuario.html', "_self");
+
     }
 }
 
@@ -34,6 +35,7 @@ function closeSession(){
 
     sessionStorage.setItem("nameSession", "null");
     sessionStorage.setItem("passSession", "null");
-    window.open('index.html', "_self");
+    //alert("cierre de sesion exitoso")
+    window.open('../index.html', "_self");
 
 }

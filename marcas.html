@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categorias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marcas</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -14,10 +14,10 @@
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="javaScript/Scripts.js"></script>
 </head>
 
 <body>
-
     <div id="posicionNav">
         <!--fixed-top deja la barra de navegacion arriba independientemente del  scrool-->
         <div id="banner">
@@ -124,9 +124,34 @@
         </nav>
     </div>
 
-    <br><h1> CATEGORIAS </h1>
+    <br><h1> Nuestras marcas aliadas </h1>
 
-    <br>
+    <div id="padre2">
+        <div id="productosMarcas">
+            <div id="galeriaProductos">
+                <div id="marca1">
+                    <img src="/imagenes/yamaha.png" alt="yamaha logo" title="Siuuuuuu" width="500px" height="280px">
+                </div>
+                <div id="marca1">
+                    <img src="/imagenes/tvs.png" alt="TVS logo" width="500px" height="230px">
+                </div>
+            </div>
+            <div id="galeriaProductos">
+                <div id="marca1">
+                    <img src="/imagenes/akt.png" alt="AKT logo" width="500px" height="200px">
+                </div>
+                <div id="marca1">
+                    <img src="/imagenes/kymco.png" alt="Kymco logo" width="500px" height="245px">
+                </div>
+            </div>
+            <div id="galeriaProductos">
+                <div id="marca1">
+                    <img src="/imagenes/honda.png" alt="Honda logo" width="600px" height="300px">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <a href="ayuda.html">
         <button id="flotante"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                 class="bi bi-headset" viewBox="0 0 16 16">
@@ -235,6 +260,50 @@
         <p> © 2022 by students of ADSI Copyright: SENA </p>
     </div>
 
-</body>
+    <div class="modal fade" id="iniciarSesion">
+        <!--Inicio de sesión-->
+        <div class="modal-dialog">
+            <div class="modal-content">
 
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Inicio de sesión</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div id="inicioSesion">
+                        <div id="intoInicio">
+                            <form class="form-group" action="">
+
+                                <input type="email" name="correo" size="auto" placeholder="Correo electrónico o número"
+                                    id="iniciarSesion1" />
+                                <br>
+
+                                <br> <input type="password" name="contrasena" placeholder="Contraseña"
+                                    id="contrasena1" /> <br>
+
+                                <br><button type="submit" onclick="cookieSesion()" class="btn btn-outline-primary">
+                                    Iniciar sesión </button><br>
+
+                                <br> <a href="olvcontra.html"> ¿Olvidaste tu contraseña? </a> <br>
+
+                                <br> <a href="registro.html"> Registrarse </a>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>

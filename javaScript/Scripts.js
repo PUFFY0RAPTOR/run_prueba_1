@@ -13,7 +13,7 @@ function cookieSesion() {
     primera = sessionStorage.getItem("nameSession");
     if (primera == "null" || primera == null){
 
-        alert("hola")
+        //alert("hola")
         if (v1 == "mateo.220@hotmail.com" && v2 == "1234"){
             sessionStorage.setItem("nameSession", v1);//aqui en vez de definir las variables v1 y v2 puedo poner los  codigos directamente
             sessionStorage.setItem("passSession", v2);
